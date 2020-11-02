@@ -1,7 +1,7 @@
 package com.unia.common;
 
 public class Neofit extends Person {
-   private String work;
+    private String work;
 
     public String getWork() {
         return work;
