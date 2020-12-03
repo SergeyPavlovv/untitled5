@@ -5,7 +5,8 @@ public class Task3 {
     //    Вычислить значение выражения по формуле (все переменные принимают действительные значения):
 
     public static void main(String[] args) {
-        double x = 73; // значения в градусах
+        // значения в градусах
+        double x = 73;
         double y = 15;
 
         //преобразование в радианы
@@ -16,6 +17,6 @@ public class Task3 {
 
         System.out.println("Результат выражения: " + res);
 
-       // System.out.println();
+
     }
 }
