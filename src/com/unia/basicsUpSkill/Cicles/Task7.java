@@ -7,5 +7,9 @@ public class Task7 {
     public static void main(String[] args) {
         int a = 13824;
         int b = 32745;
+        String s = String.valueOf(a);
+        String d = String.valueOf(b);
+
+
     }
 }

@@ -9,9 +9,11 @@ public class Task1 {
         int a = 45;
         int b = 90;
         int c = 180 - (a + b);
-        if (c > 0 && a > 0 && b > 0) {
+        boolean isAllAnglesPositive = c > 0 && a > 0 && b > 0;
+        if (isAllAnglesPositive) {
             System.out.print("треугольник: true,");
-            if (a == 90 || b == 90 || c == 90) {
+            boolean isAnyAngelRight = a == 90 || b == 90 || c == 90;
+            if (isAnyAngelRight) {
                 System.out.print(" прямоугольный");
             }
         } else {
