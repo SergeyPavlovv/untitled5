@@ -1,4 +1,4 @@
-package com.unia.basicsUpSkill.Cicles;
+package com.unia.basicsUpSkill.cicles;
 
 public class Task3 {
 

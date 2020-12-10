@@ -1,4 +1,4 @@
-package com.unia.basicsUpSkill.Branching;
+package com.unia.basicsUpSkill.branching;
 
 public class Task3 {
 
