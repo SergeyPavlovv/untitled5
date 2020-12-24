@@ -10,15 +10,18 @@ public class Task2 {
         int b = 10;
         int h = 2;
 
-        for (int x = a; x < b; x = x + h) {
+        for (int x = a; x <= b; x = x + h) {
             if (x > 2) {
                 System.out.println(x);
             } else {
                 System.out.println(-x);
             }
         }
-        for (int x = a; x < b; x = x + h){
-           int y = x>2? x:-x;
+
+        // TODO: 22.12.2020 чаще форматируй отступы ;)
+        // TODO: 22.12.2020 всегда проверяй пограничные условия: < или <=
+        for (int x = a; x <= b; x = x + h) {
+            int y = x > 2 ? x : -x;
             System.out.println(y);
         }
     }

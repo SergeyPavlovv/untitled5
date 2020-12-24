@@ -1,8 +1,8 @@
 package com.unia.basicsUpSkill.algorithmization.arraysOfArrays;
 
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
-import java.util.Collections;
+
 
 public class Task13 {
 
@@ -53,13 +53,13 @@ public class Task13 {
         for (int i = 0; i < matrix.length; i++) {
             temp[i]= matrix[i][column];
         }
-        SortArrayColumnRevers(temp);
+        sortArrayColumnRevers(temp);
         for (int i = 0; i < matrix.length; i++) {
             matrix[i][column] = temp[i];
         }
     }
 
-    private static void SortArrayColumnRevers(int[] array) {
+    private static void sortArrayColumnRevers(int[] array) {
         int temp = 0;
         boolean sortingFinished = false;
 

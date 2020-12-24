@@ -15,13 +15,22 @@ public class Task6 {
         int m = Integer.parseInt(reader.readLine());
         int n = Integer.parseInt(reader.readLine());
 
-        for (int i = m; i < n; i++) {
-            if (i % 2 == 0) {
-                System.out.println(i);
+        int delitel;
+        for (int i = m; i <= n; i++) {
+            System.out.print(i + ": ");
+
+            for (int j = 1; j < i; j++) {
+
+                    delitel = i/j;
+
+                if (i % j == 0 && delitel !=i) {
+                    System.out.print(delitel + " ");
+                }
+
             }
-            if (i == 2){
-                continue;
-            }
+            System.out.println();
         }
+
     }
 }
+

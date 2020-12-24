@@ -12,7 +12,9 @@ public class Task4 {
 
         BigInteger product = BigInteger.valueOf(1);
         for(int i = 2; i <= 200; i++) {
-            product = product.multiply(BigInteger.valueOf((long) i * i));
+            // TODO: 22.12.2020 Introduce loca variable
+            BigInteger squareValue = BigInteger.valueOf((long) i * i);
+            product = product.multiply(squareValue);
         }
         System.out.println(product);
 

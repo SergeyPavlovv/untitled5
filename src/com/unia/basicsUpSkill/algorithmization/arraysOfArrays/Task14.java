@@ -17,9 +17,8 @@ public class Task14 {
 
         int min = 3;
         int max = 15;
-        double d = (int) (Math.random() * ((max - min) + 1)) + min;
-        int size = (int) d;
-        return size;
+        double d = (Math.random() * ((max - min) + 1)) + min;
+        return (int) d;
     }
 
 

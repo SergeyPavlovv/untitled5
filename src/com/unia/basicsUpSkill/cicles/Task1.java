@@ -15,6 +15,8 @@ public class Task1 {
         System.out.println("Введите любое целое положительное число: ");
 
         int x = Integer.parseInt(reader.readLine());
+
+        // TODO: 22.12.2020 why do we start to sum from 1?
         int sum = 1;
         for (int i = 0; i <= x; i++) {
             sum += i;

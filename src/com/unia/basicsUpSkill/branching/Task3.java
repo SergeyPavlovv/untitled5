@@ -16,12 +16,9 @@ public class Task3 {
         int x3 = 4;
         int y3 = 4;
 
-         if((x3 - x1)/(x2 - x1) == (y3 - y1)/ (y2 - y1)){
+        boolean pointsBelongsToOneLine = ((x3 - x1)/(x2 - x1) == (y3 - y1)/ (y2 - y1));
 
-        //if (x1 == y1 && x2 == y2 && x3 == y3) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
+            System.out.println(pointsBelongsToOneLine);
         }
     }
-}
+
