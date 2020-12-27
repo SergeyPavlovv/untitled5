@@ -8,10 +8,10 @@ public class Task11 {
         int a = 23456;
         int b = 12345678;
 
-        number1(a);
-        number2(b);
+        number(a);
+        number(b);
 
-        if(number1(a)>number2(b)){
+        if(number(a)>number(b)){
             System.out.println("больше цифр в числе: " + a);
         }else {
             System.out.println("больше цифр в числе: " + b);
@@ -19,7 +19,7 @@ public class Task11 {
         
     }
 
-    private static int number1(int n) {
+    private static int number(int n) {
         int count = 0;
         while (n > 0) {
             count++;
@@ -28,13 +28,5 @@ public class Task11 {
         }
         return count;
     }
-    private static int number2(int a) {
-        int count = 0;
-        while (a > 0) {
-            count++;
-            int i = a % 10;
-            a /= 10;
-        }
-        return count;
-    }
+
 }
