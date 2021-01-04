@@ -23,6 +23,7 @@ public class Task12 {
 
     /**
      * создаем и заполняем массив А
+     *
      * @param k
      * @param n
      * @param arrayLength
@@ -41,11 +42,12 @@ public class Task12 {
 
     /**
      * получаем рандомное число в диапозоне не больше N и суммой цифр равной K
+     *
      * @param k
      * @param n
      * @return
      */
-    private static int randomNumber(int k, int n){
+    private static int randomNumber(int k, int n) {
         int temp = 0;
         boolean checkedForK = false;
         while (!checkedForK) {
@@ -57,11 +59,12 @@ public class Task12 {
 
     /**
      * проверка суммы цифр чила на равенство K;
+     *
      * @param number
      * @param k
      * @return
      */
-    private static boolean checkForK (int number, int k){
+    private static boolean checkForK(int number, int k) {
         int sum = 0;
         while (number > 0) {
             int i = number % 10;
@@ -74,7 +77,7 @@ public class Task12 {
 
     public static void printArray(int[] array) {
         for (int i : array) {
-            System.out.print( i + " ");
+            System.out.print(i + " ");
         }
     }
 }

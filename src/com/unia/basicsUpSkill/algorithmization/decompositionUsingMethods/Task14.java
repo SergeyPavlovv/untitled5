@@ -12,7 +12,7 @@ public class Task14 {
 
 
         for (int i = 1; i < 9999; i++) {
-            if(checkForArmstrong(i)) {
+            if (checkForArmstrong(i)) {
                 System.out.println(i);
             }
         }
@@ -22,10 +22,11 @@ public class Task14 {
 
     /**
      * находим число Армстронга, если true возвращаем
+     *
      * @param a
      * @return
      */
-    private static boolean checkForArmstrong(int a){
+    private static boolean checkForArmstrong(int a) {
         boolean res = false;
         int n, temp = 0, count = 0;
         double arm;

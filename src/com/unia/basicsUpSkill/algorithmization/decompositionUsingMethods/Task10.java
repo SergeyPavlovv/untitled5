@@ -8,30 +8,32 @@ public class Task10 {
     public static void main(String[] args) {
         int n = 3564;
         int[] array = new int[indexArray(n)];
-       arrayNumber(array, n);
-       for(int i : arrayNumber(array, n)){
-           System.out.print( i + " ");
-       }
+        arrayNumber(array, n);
+        for (int i : arrayNumber(array, n)) {
+            System.out.print(i + " ");
+        }
 
     }
-    private static int indexArray(int n){
+
+    private static int indexArray(int n) {
         int count = 0;
-        while (n>0){
+        while (n > 0) {
             count++;
-            int i = n%10;
-            n/=10;
+            int i = n % 10;
+            n /= 10;
         }
 
         return count;
     }
-    private static int[] arrayNumber(int[] a, int n){
+
+    private static int[] arrayNumber(int[] a, int n) {
 
         int[] array = new int[indexArray(n)];
-       for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = n % 10;
             n /= 10;
         }
-       return array;
+        return array;
     }
 
 }

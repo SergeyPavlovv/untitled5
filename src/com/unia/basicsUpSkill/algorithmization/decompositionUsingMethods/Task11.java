@@ -11,12 +11,12 @@ public class Task11 {
         number(a);
         number(b);
 
-        if(number(a)>number(b)){
+        if (number(a) > number(b)) {
             System.out.println("больше цифр в числе: " + a);
-        }else {
+        } else {
             System.out.println("больше цифр в числе: " + b);
         }
-        
+
     }
 
     private static int number(int n) {
